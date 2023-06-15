@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    printf("Welcome to C programming");	
+    printf("Holberton SchoolGCC");	
     return (0);
 }
