@@ -9,6 +9,8 @@
  * Date: 17th June 2023
  *
  * Details: A c program to check if a number is +ve, -ve or 0
+ *
+ * Return: 0 (Success)
  */
 
 int main(void)
