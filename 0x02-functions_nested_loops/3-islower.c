@@ -1,10 +1,9 @@
 #include "main.h"
 /**
-* _islower - to check if a character is lowercase and returns 1 if yes
-* returns 0 just like islower() in ctype.h
-*@c - this is the int value to be compared with ASCII value
-*
-* return: 0 (success)
+* _islower - checks if a charactec is lowercase and returns 1 if a character is lowercase
+* it returns 0 just like islower() in ctype.h
+* @c - this is the int value to be compared with ASCII value
+* Return: 0 if successful
 */
 int _islower(int c)
 {
@@ -12,4 +11,4 @@ int _islower(int c)
 		return (1);
 	else
 		return (0);
-}	
+}
