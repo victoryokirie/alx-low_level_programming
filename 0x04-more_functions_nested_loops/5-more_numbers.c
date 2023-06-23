@@ -1,6 +1,8 @@
 #include "main.h"
 /**
 *more_numbers - print 0 - 14 ten times
+*@a: param for outer loop
+*@b: param for inner loop
 */
 void more_numbers(void)
 {
