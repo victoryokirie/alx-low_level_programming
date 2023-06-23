@@ -2,7 +2,7 @@
 /**
 * _isdigit - Returns 1 if a character is digit, otherwise returns 0
 * @c: int value compared with ASCII value
-* Return: 0 if sucessful
+* Return: 0 or 1 
 */
 int _isdigit (int c)
 {
