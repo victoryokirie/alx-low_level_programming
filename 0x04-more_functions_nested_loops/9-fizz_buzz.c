@@ -1,7 +1,6 @@
 #include<stdio.h>
 /**
 * main - Entry point
-*@i: param
 * Return: 0 if successful
 */
 int main (void)
