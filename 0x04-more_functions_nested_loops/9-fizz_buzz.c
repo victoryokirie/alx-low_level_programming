@@ -1,7 +1,8 @@
 #include<stdio.h>
 /**
 * main - Entry point
-* Return: 0
+*@i: param
+* Return: 0 if successful
 */
 int main (void)
 {
