@@ -4,8 +4,6 @@
 /**
 * puts_half - prints half of string
 * @str : string to be split in two
-* @length : str length
-* @i : midpoint
 */
 void puts_half(char *str)
 {
@@ -13,12 +11,11 @@ void puts_half(char *str)
 	int i;
 
 	if (length % 2 != 0)
-		length = length + 1;
+		length = length - 1;
 	i = length / 2;
 	while (i < length)
 	{
 		putchar(str[i]);
 		i++;
 	}
-	putchar('\n');
 }
