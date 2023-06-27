@@ -3,7 +3,7 @@
 /**
 * _atoi - converts string to integer
 *Return: integer
-*@spointer parameter
+*@s: pointer parameter
 */
 int _atoi(char *s)
 {
@@ -21,11 +21,12 @@ int _atoi(char *s)
 	while (*s >= '0' && *s <= '9')
 	{
 		int digit = *s - '0';
+
 		integer = (integer * 10) + digit;
 		s++;
 	}
 	integer = integer * sign;
 	if (integer == 0 && *s != '0')
 		return (0);
-	return integer;
+	return (integer);
 }
