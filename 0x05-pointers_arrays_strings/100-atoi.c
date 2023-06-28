@@ -9,9 +9,26 @@ int _atoi(char *s)
 {
 	int sign = 1;
 
-	int integer = 0;
+	int result = 0;
 
-	while (*s == ' ')
+	while (*s != '\0')
+	{
+		if (*s >= '0' && *s <= '9')
+		{
+			int digit = *s - '0';
+			
+			result = (result * 10) + digit;
+		}
+		else if (*s == '-' && *(s + 1) >= '0' && *(s + 1) <= '9')
+			sign = -1;
+		else if (*s == '+' && *(s + 1) >= '0' && *(s + 1) <= '9')
+			sign = 1;
+		else if (result != 0)
+			break;
+		s++;
+	}
+	return (sign * result);
+	/*while (*s == ' ')
 		s++;
 	if (*s == '-' || *s == '+')
 	{
@@ -28,5 +45,5 @@ int _atoi(char *s)
 	integer = integer * sign;
 	if (integer == 0 && *s != '0')
 		return (0);
-	return (integer);
+	return (integer);*/
 }
