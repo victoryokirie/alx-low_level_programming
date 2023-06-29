@@ -8,9 +8,13 @@
 */
 char *string_toupper(char *str)
 {
+
 	while (*str != '\0')
 	{
-		*str = toupper(*str);
+		if (*str >= 97 && *str <= 122)
+		{
+			*str = *str - 32;
+		}
 		str++;
 	}
 	return (str);
