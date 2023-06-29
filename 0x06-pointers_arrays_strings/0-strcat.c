@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
-#include <string.h>
 /**
-*_strcat - function that concats two strings
+*_strcat - function that concatenatess two strings
 *@src : pointer to source string
 *@dest: pointer to destination string
+*
 * Return: pointer to dest string
 */
 char *_strcat(char *dest, char *src)
