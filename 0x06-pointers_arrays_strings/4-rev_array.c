@@ -3,6 +3,7 @@
 *reverse_array - reveres an aaray
 *@n: number of elements of an array
 *@a:pointr to array
+*
 * Return:void
 */
 void reverse_array(int *a, int n)
